@@ -109,6 +109,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5-x86-mingw32)
       racc (~> 1.4)
+    pg (1.2.3-x86-mingw32)
     public_suffix (4.0.6)
     puma (3.12.6)
     racc (1.6.0)
@@ -210,6 +211,7 @@ DEPENDENCIES
   duktape
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3, >= 4.3.3)
+  pg
   puma (~> 3.11)
   rails (~> 5.2.6)
   rails-ujs (~> 0.1.0)
