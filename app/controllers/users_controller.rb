@@ -51,4 +51,6 @@ class UsersController < ApplicationController
       if !logged_in? && current_user!= @user
         flash[:danger]= "You can't edit"
         redirect_to root_path
+      end
+    end
 end

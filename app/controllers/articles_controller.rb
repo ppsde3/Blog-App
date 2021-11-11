@@ -56,5 +56,7 @@ class ArticlesController < ApplicationController
 
    def require_same_user
       if current.user != @article.user && !current_user.admin?
-         flash[:danger= "You can not update another article"]
+         flash[:danger]= "You can not update another article"
+      end
+   end
 end
