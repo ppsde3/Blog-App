@@ -1,5 +1,5 @@
-<% obj.each do |article| %>
-<div class="row">
+    <% obj.each do |article| %>
+    <div class="row">
     <div class="col-xs-8 col-xs-offset-2">
     <div class="well well-lg">
     <div class="article-title">
@@ -12,14 +12,14 @@
     </small>
     </div>
     </div>
- <div class="article-actions">
-  <% if logged_in? && ( current_user == article.user || current_user.admin? ) %>
+    <div class="article-actions">
+    <% if logged_in? && ( current_user == article.user || current_user.admin? ) %>
     <%= link_to "Edit",edit_article_path(article),class:"btn btn-xs btn-primary" %>
     <%= link_to "Delete",articles_path(article), method: :delete, data:{confirm:"Are You Sure"}, class: "btn btn-xs btn-danger" %>
     <% end %>
     <%= link_to "Back",articles_path, class: "btn btn-xs btn-success" %>
-</div>
-</div>
-</div>
-</div>
+    </div>
+    </div>
+    </div>
+    </div>
     <% end %>
